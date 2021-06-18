@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+
+:root{
+  --white: rgb(255, 255, 255);
+  --trans-white: rgba(255,255,255, .65);
+  --dark-blue: rgb(12, 59, 104);
+  --dark-blue-trans: rgba(12, 59, 104, .85);
+  --green: rgb(128, 174, 68);
+  --green-trans: rgba(128, 174, 68, .50);
+  --shadow: rgba(14, 14, 14, 0.10);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  overflow-x: hidden;
+  line-height: 1.2;
+}
+
+@media(min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+/*========================================================
+==========================================================
+Navigation Styles
+==========================================================
+========================================================*/
+header {
+  border-bottom-left-radius: 75% 50%;
+  border-bottom-right-radius: 75% 25%;
+  padding-top: 10px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  transition: 250ms ease-in-out
+}
+
+.header-wrapper img {
+  width: 175px;
+  display: block;
+}
+
+nav {
+  text-align: right;
+  text-transform: uppercase;
+  position: absolute;
+  width: 250px;
+  height: 100vh;
+  box-shadow: -5px -5px  20px var(--shadow);
+  background-color: white;
+  top: 0;
+  right: -265px;
+  padding-top: 40px;
+  padding-right: 20px;
+  transition: 250ms ease-in-out
+}
+
+nav ul {
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+nav ul li {
+  margin-bottom: 20px;
+}
+
+nav ul li a {
+  color: var(--dark-blue)
+}
+
+.nav-toggle {
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+  font-size: 24px;
+  padding: 5px;
+  right: 15px;
+  top: 20px;
+  position: absolute;
+}
+.nav-toggle-blue {
+  color: var(--dark-blue)
+}
+
+.nav-open {
+  right: 0;
+}
+
+.nav-closed {
+  height: 0px;
+}
+
+/*========================================================
+==========================================================
+Hero Styles
+==========================================================
+========================================================*/
+
+.hero-wrapper {
+  background-image: url('../../images/365templates-hero_background.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height:600px;
+  top: -75px;
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  border-bottom-left-radius: 50% 40%;
+  border-bottom-right-radius: 50% 20%;
+  color: var(--white);
+}
+
+.hero-content {
+  margin-bottom: 40px;
+}
+
+.hero-content h1{
+  font-size: 2.5rem;
+}
+
+.hero-content .green-btn {
+  font-size: 16px;
+}
+
+.hero-content .hero-lead {
+  margin-bottom: 40px;
+}
+
+.hero-content .hero-small {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+
+/*========================================================
+==========================================================
+How it Works Styles
+==========================================================
+========================================================*/
+.how-it-works {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.how-it-works h3 {
+  font-size: 36px;
+}
+
+.how-it-works h4 {
+  font-size: 24px;
+}
+
+.how-it-works ul li {
+  margin-bottom: 10px;
+}
+
+.how-it-works .btn{
+  margin-top: 10px;
+}
+
+/*========================================================
+==========================================================
+Featured Theme Styles
+==========================================================
+========================================================*/
+.featured-wrapper {
+  background-image: url('../../images/365templates-green-background.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 40px;
+}
+
+.featured-wrapper .content {
+  transform: translateY(-40px);
+}
+
+.featured-wrapper img {
+  margin-bottom: 20px;
+  box-shadow: 10px 10px 10px var(--shadow);
+}
+
+.featured-wrapper ul,
+.benefits ul{
+  list-style: disc;
+  margin-left: 20px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+.we-handle-everything ul {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+
+.benefits {
+  margin-bottom: 40px;
+}
+
+/*========================================================
+==========================================================
+Footer Styles
+==========================================================
+========================================================*/
+footer {
+  background-image: url("../../images/365templates-footerBG.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 40px 10px;
+  line-height: 1.75;
+  color: var(--white);
+  margin-top: 40px;
+}
+
+.footer-nav {
+  text-transform: uppercase
+}
+
+footer .footer-nav a,
+address a {
+  color: var(--trans-white);
+  transition: 150ms ease-in-out
+}
+
+footer .footer-nav a:hover,
+address a:hover {
+  color: var(--white);
+  border-bottom: 1px solid var(--green)
+}
+
+footer address {
+  text-align: right;
+}
+
+footer img {
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+/*========================================================
+==========================================================
+Global Styles
+==========================================================
+========================================================*/
+.text-green{
+  color: var(--green);
+}
+.text-darkblue{
+  color: var(--dark-blue);
+}
+.text-blue-trans{
+  color: var(--dark-blue-trans)
+}
+.text-white {
+  color: var(--white);
+}
+.text-small {
+  font-size: 12px;
+  position: relative;
+  top: -15px;
+}
+.bold{
+  font-weight: 700;
+  color: var(--dark-blue);
+}
+.btn {
+  text-transform: uppercase;
+  border-radius: 0;
+}
+.green-btn {
+  background-color: var(--green);
+  padding: 7px 25px;
+  color: var(--white);
+  transition: 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 5px 5px 5px var(--shadow)
+}
+.green-btn:hover {
+  transform: scale(1.1);
+  color: var(--white);
+  box-shadow: 10px 10px 20px var(--shadow);
+}
+.blue-btn {
+  background-color: var(--dark-blue);
+  padding: 7px 25px;
+  color: var(--white);
+  transition: 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 5px 5px 5px var(--shadow)
+}
+.blue-btn:hover {
+  transform: scale(1.1);
+  color: var(--white);
+  box-shadow: 10px 10px 20px var(--shadow);
+}
+
+/*========================================================
+==========================================================
+Media Queries
+==========================================================
+========================================================*/
+/* @media(min-width: 390px) {
+  .hero-wrapper {
+    height: 575px;
+  }
+} */
+@media(min-width: 540px) {
+  .hero-wrapper {
+    height: 685px;
+  }
+
+  .how-it-works {
+    margin-top: 60px;
+  }
+}
+
+@media(min-width: 768px) {
+  nav {
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    width: 100%;
+    height: 150px;
+    transform: translatey(-50px);
+  }
+
+  nav ul {
+    margin-top: 0px;
+  }
+
+  nav ul li {
+    display: inline;
+  }
+
+  nav ul li:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  nav ul li a {
+    color: var(--trans-white);
+    transition: 150ms ease-in-out;
+  }
+
+  nav ul li a:hover {
+    color: var(--white);
+    border-bottom: 1px solid var(--green);
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+  .hero-wrapper {
+    height: 775px;
+  }
+  .how-it-works {
+    margin-bottom: 150px;
+  }
+  .how-it-works h3 {
+    font-size: 48px;
+  }
+  .featured-wrapper {
+    margin-bottom: 80px;
+  }
+  .featured-wrapper .content h2{
+    font-size: 64px;
+  }
+  .benefits {
+    margin-bottom: 80px;
+  }
+  .benefits h2 {
+    font-size: 64px;
+    width: 300px;
+  }
+}
+
+@media(min-width: 992px) {
+  .hero-wrapper {
+    height: 825px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .featured-wrapper .content h2 {
+    width: 300px;
+  }
+}
+
+@media(min-width: 1220px) {
+  .hero-wrapper {
+    height: 950px;
+  }
+  .hero-wrapper .hero-content h1 {
+    font-size: 72px;
+  }
+
+  .hero-content .hero-lead {
+    margin-bottom: 80px;
+  }
+
+  .hero-content .green-btn {
+    font-size: 20px;
+  }
+}
+
+@media(min-width: 1440px) {
+  
+}
